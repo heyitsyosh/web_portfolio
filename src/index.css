@@ -19,7 +19,63 @@
 	display: block;
 }
 
-.black-gradient {
+/* 
+/* MENU HOVER ANIMATION */
+
+@-webkit-keyframes widen-menu {
+	from {
+		transform: translateY(0%)
+	}
+	to {
+		transform: translateY(101%)
+	}
+}
+
+@keyframes widen-menu {
+	from {
+		transform: translateY(0%)
+	}
+	to {
+		transform: translateY(101%)
+	}
+}
+
+.widen_menu {
+	-webit-animation-name: widen-menu;
+	animation-name: widen-menu
+}
+
+@-webkit-keyframes tighten-menu {
+	from {
+		transform: translateY(0%)
+	}
+	to {
+		transform: translateY(101%)
+	}
+}
+
+@keyframes tighten-menu {
+	from {
+		transform: translateY(0%)
+	}
+	to {
+		transform: translateY(101%)
+	}
+}
+
+.fullscreen_navbar{
+	overflow: hidden;
+	background: 
+}
+
+.tighten-menu {
+	-webit-animation-name: tighten-menu;
+	animation-name: tighten-menu
+}
+
+/* GRADIENTS*/
+
+.pink-gradient {
 	background: #000000; /* fallback for old browsers */
 	background: -webkit-linear-gradient(
 		to right,
