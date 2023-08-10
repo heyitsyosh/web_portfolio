@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,64 +11,19 @@
 	color-scheme: light;
 }
 
+.font1 {
+	font-family: 'Poppins', sans-serif;
+}
+
+.font2 {
+	font-family: 'IBM Plex Sans JP', sans-serif;
+	font-weight: 700;
+}
+
 .hash-span {
 	margin-top: -100px;
 	padding-bottom: 100px;
 	display: block;
-}
-
-/* 
-/* MENU HOVER ANIMATION */
-
-@-webkit-keyframes widen-menu {
-	from {
-		transform: translateY(0%)
-	}
-	to {
-		transform: translateY(101%)
-	}
-}
-
-@keyframes widen-menu {
-	from {
-		transform: translateY(0%)
-	}
-	to {
-		transform: translateY(101%)
-	}
-}
-
-.widen_menu {
-	-webit-animation-name: widen-menu;
-	animation-name: widen-menu
-}
-
-@-webkit-keyframes tighten-menu {
-	from {
-		transform: translateY(0%)
-	}
-	to {
-		transform: translateY(101%)
-	}
-}
-
-@keyframes tighten-menu {
-	from {
-		transform: translateY(0%)
-	}
-	to {
-		transform: translateY(101%)
-	}
-}
-
-.fullscreen_navbar{
-	overflow: hidden;
-	background: 
-}
-
-.tighten-menu {
-	-webit-animation-name: tighten-menu;
-	animation-name: tighten-menu
 }
 
 /* GRADIENTS*/
@@ -98,6 +51,38 @@
 		rgba(60, 51, 80, 0) 100%
 	);
 }
+/* 
+.background-gradient {
+	background:
+	radial-gradient(
+		73% 101% at 95.54% 95.05%,
+		rgba(255, 156, 65, 0.78) 0%,
+		rgba(255, 168, 88, 0) 100%
+	),
+	linear-gradient(
+		197deg,
+		rgba(255, 240, 164, 1) 0%,
+		rgba(255, 240, 164, 0) 100%
+	),
+	radial-gradient(
+		59% 74% at 10% -10%,
+		rgba(49, 132, 255, 0.8) 0%,
+		rgba(56, 75, 246, 0.21) 52%,
+		rgba(62, 246, 246, 0) 100%
+	),
+	linear-gradient(
+		143deg,
+		rgba(62, 158, 246, 1) 0%,
+		rgba(238, 43, 183, 0.33) 30%,
+		rgba(246, 62, 106, 0) 56%
+	),
+	linear-gradient(
+		288deg,
+		rgba(217, 155, 255, 1) 33%,
+		rgba(217, 170, 221, 0) 97%
+	);
+	background-blend-mode: , , , , ;
+} */
 
 .green-pink-gradient {
 	background: "#00cea8";
