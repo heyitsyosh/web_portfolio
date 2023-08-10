@@ -20,7 +20,7 @@ const Navbar = () => {
 				}}
 			>
 				<img src={logo} alt="logo" draggable="false" className="w-9 h-9 object-contain"/>
-				<p className="text-title-pink text-[18px] font-bold cursor-pointer">maria yoshikawa
+				<p className="text-title-pink text-[18px] font-bold cursor-pointer sm:block hidden">maria yoshikawa
 					<span className="sm:block hidden">よしかわ まりあ</span>
 				</p>
 			</Link>

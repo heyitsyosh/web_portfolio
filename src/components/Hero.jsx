@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <section className="relative w-full h-screen mx-auto">
 		<svg
-			className="flex justify-center"
+			className="absolute"
 			width="100%" 
 			height="100%" 
 			viewBox="0 0 800 900"
