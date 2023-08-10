@@ -20,7 +20,7 @@ const Avatar = ({ isMobile }) => {
 		<primitive
 			object={avatar.scene}
 			scale={isMobile ? 0.6 : 0.75}
-			position={isMobile ? [0, -3, -2.2] : [0, -3.15, -1.5]}
+			position={isMobile ? [0, -3, -2.2] : [0, -2.05, -1.5]}
 			rotation={[-0.01, -0.2, -0.1]}
 		/>
 	</mesh>
