@@ -5,20 +5,30 @@ import { AvatarCanvas } from './canvas';
 const Hero = () => {
   return (
     <section className="relative w-full h-screen mx-auto">
-		<div className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}>
-			<div className="flex flex-col justify-center items-center mt-5">
-				<div className="w-5 h-5 rounded-full bg-[#915eff]" />
-				<div className="w-1 sm:h-80 h-40 violet-gradient" />
-			</div>
-			<div>
-				<h1 className={`${styles.heroHeadText}`}>Hi, I'm <span className="text-[#915eff]"> Maria </span>
-				</h1>
-				<p className={`${styles.heroSubText} mt-2 font2`}>
-					よろしくです。
-					<br className="sm:block hidden" />
-				</p>
-			</div>
-		</div>
+		<svg
+			className="flex justify-center"
+			width="100%" 
+			height="100%" 
+			viewBox="0 0 800 900"
+			xmlns="http://www.w3.org/2000/svg"
+		>
+			<path 
+				id="curvedPath"
+				d="M 100 300 Q 400 100 700 300 Z"
+				fill="none" 
+				/>
+			<text className={`${styles.heroHeadText}`} textAnchor='middle'>
+				<textPath href="#curvedPath" startOffset="25%">
+					<tspan fill="#292529"> Hi, I'm </tspan>
+					<tspan fill="#996464"> Maria </tspan>
+				</textPath>
+			</text>
+			{/* <text className={`${styles.heroSubText}`}>
+				<textPath href="#curvedPath" startOffset="15%">
+					<tspan dy="40" fill="#292529"> Glad you're here :) </tspan>
+				</textPath>
+			</text> */}
+		</svg>
 		<AvatarCanvas />
 	</section>
   )
