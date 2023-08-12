@@ -18,7 +18,7 @@ const Hero = () => {
 				fill="none" 
 				/>
 			<text className={`${styles.heroHeadText}`} textAnchor='middle'>
-				<textPath href="#curvedPath" startOffset="25%">
+				<textPath href="#curvedPath" startOffset="25.5%">
 					<tspan fill="#292529"> Hi, I'm </tspan>
 					<tspan fill="#996464"> Maria </tspan>
 				</textPath>
