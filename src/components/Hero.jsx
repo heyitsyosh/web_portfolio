@@ -29,7 +29,7 @@ const Hero = () => {
 				</textPath>
 			</text> */}
 		</svg>
-		<AvatarCanvas />
+		{/* <AvatarCanvas /> */}
 	</section>
   )
 }
