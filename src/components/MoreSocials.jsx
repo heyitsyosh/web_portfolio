@@ -4,8 +4,8 @@ import { moreSocials } from '../constants';
 
 const MoreSocials = () => {
   return (
-	<div className={`${styles.paddingX} w-full flex flex-wrap justify-center gap-4 font-semibold text-logo-pink`}>
-		<ul className="list-none flex flex-wrap flex-row gap-4 justify-center">
+	<div className={`${styles.paddingX} w-full flex flex-wrap justify-center text-lg gap-7 font-semibold text-logo-pink`}>
+		<ul className="list-none flex flex-wrap flex-row gap-7 justify-center">
 			{moreSocials.map((link) => (
 				<li key={link.id} className="inline hover:text-hover-pink justify-center">
 					<a
