@@ -12,6 +12,7 @@ module.exports = {
 		  "white-100": "#f3f3f3",
 		  "logo-pink":"#DFA8A8",
 		  "title-pink":"#996464",
+		  "hover-pink":"#ba7b7b",
 		},
 		boxShadow: {
 		  card: "0px 35px 120px -15px #211e35",

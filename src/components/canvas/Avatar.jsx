@@ -4,7 +4,7 @@ import { ComputedAttribute, OrbitControls, Preload, useGLTF} from '@react-three/
 import CanvasLoader from '../Loader';
 
 const Avatar = ({ isMobile }) => {
-	const avatar = useGLTF('./desktop_pc/scene.gltf')
+	const avatar = useGLTF('./tmp_desktop_pc/scene.gltf')
   return (
     <mesh>
 		<hemisphereLight intensity={0.25} groundColor="black" />

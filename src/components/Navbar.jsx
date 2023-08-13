@@ -31,7 +31,7 @@ const Navbar = () => {
 			/>
 				<div className={`${!toggle ? 'hidden' : 'flex'} 
 					p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10rounded-xl`}>
-					<ul className="list-none flex jujstify-end flex-col items-start gap-2">
+					<ul className="list-none flex justify-end flex-col items-start gap-2">
 					{navLinks.map((link) => (
 						<li key={link.id} className={`${
 								active === link.title 
