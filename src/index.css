@@ -19,7 +19,7 @@
 
 /* SCROLLER */
 
-/* .scroller-wrapper {
+.scroller-wrapper {
     width: calc(100% - 7px);
 	height: 100vh;
     margin-right: -7px;
@@ -45,7 +45,7 @@
 
 .scroller::-webkit-scrollbar-thumb:hover {
 	background: #ba7b7b; 
-} */
+}
 
 /* NO SCROLLER */
 
@@ -95,6 +95,7 @@ body::-webkit-scrollbar, html::-webkit-scrollbar {
 	margin-top: 0px;
 	margin-left: 15px;
 	padding-left: 5.5px;
+	padding-bottom: 1.5px;
 	background-color: #adadad;
     height: 20px;
     width: 58px;
@@ -111,6 +112,24 @@ body::-webkit-scrollbar, html::-webkit-scrollbar {
 	height: 7px;
 	-webkit-transform: rotate(45deg);
 			transform: rotate(45deg);
+}
+
+.copied-fade-in{
+	animation: fadeIn 150ms ease-in;
+}
+
+/* FADE IN */
+@keyframes fadeIn {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* FADE OUT  */
+
+.fade-out {
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s 2s, opacity 2s linear;
 }
 
 /* FONTS */
