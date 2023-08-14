@@ -7,14 +7,14 @@ const App = () => {
 		  <div className="relative z-0 bg-primary">
 			<div className="bg-cover bg-no-repeat bg-center">
 				<Navbar />
-					<div className="scroller-wrapper">
-						<div className="scroller">
+				<div className="scroller-wrapper">
+					<div className="scroller">
 							<Hero />
 							{/* <About /> */}
 							<MoreSocials />
 							<Footer />
-						</div>
 					</div>
+				</div>
 			</div>
 		  </div>
 		</BrowserRouter>
