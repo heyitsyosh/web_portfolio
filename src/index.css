@@ -19,7 +19,7 @@
 
 /* SCROLLER */
 
-.scroller-wrapper {
+/* .scroller-wrapper {
     width: calc(100% - 7px);
 	height: 100vh;
     margin-right: -7px;
@@ -45,6 +45,19 @@
 
 .scroller::-webkit-scrollbar-thumb:hover {
 	background: #ba7b7b; 
+} */
+
+/* NO SCROLLER */
+
+body, html {
+	overflow-y: scroll;
+
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+body::-webkit-scrollbar, html::-webkit-scrollbar {
+	display: none;
 }
 
 /* COPY BUTTON */
@@ -57,19 +70,47 @@
     margin-left: 3px;
 	margin-top: 3px;
     border-radius: 3px;
-    border: solid 2px currentColor;
+    border: solid 2px;
     background: transparent;
 }
 
 .copy-button::before {
     content: '';
-    position: absolute; /* Position it absolutely relative to .copy-button */
+    position: absolute;
     top: -6.5px;
     left:  3px;
     height: 10px;
     width: 10px;
     border-radius: 3px;
-    border: solid 2px currentColor;
+    border: solid 2px;
+}
+
+/* COPIED MESSAGE */
+
+.copied-message {
+	cursor: default;
+	font-size: 12px;
+	color: white;
+	position: relative;
+	margin-top: 0px;
+	margin-left: 15px;
+	padding-left: 5.5px;
+	background-color: #adadad;
+    height: 20px;
+    width: 58px;
+    border-radius: 4px;
+}
+
+.copied-message:before{
+	content: '';
+	background-color: #adadad;
+	position: absolute;
+	left: -3.5px;
+	top: 7px;
+	width: 7px;
+	height: 7px;
+	-webkit-transform: rotate(45deg);
+			transform: rotate(45deg);
 }
 
 /* FONTS */
@@ -133,7 +174,23 @@
 	background-blend-mode: , , , , ;
 } */
 
+/* FLOAT ANIMATION */
 
+/* .float-animation{
+	animation-name: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+} */
 
 /* CANVAS STYLES */
 

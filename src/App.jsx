@@ -6,19 +6,15 @@ const App = () => {
 		<BrowserRouter>
 		  <div className="relative z-0 bg-primary">
 			<div className="bg-cover bg-no-repeat bg-center">
-				<Navbar />
-				<div className="scroller-wrapper">
-					<div className="scroller">
-						<Hero />
-						{/* <Socials /> */}
-						<About />
-						{/* <div className="relative z-0">
-							<StarsCanvas />
-						</div> */}
-						<MoreSocials />
-						<Footer />
-					</div>
-				</div>
+				{/* <Navbar /> */}
+					<Hero />
+					{/* <Socials /> */}
+					<About />
+					{/* <div className="relative z-0">
+						<StarsCanvas />
+					</div> */}
+					<MoreSocials />
+					<Footer />
 			</div>
 		  </div>
 		</BrowserRouter>

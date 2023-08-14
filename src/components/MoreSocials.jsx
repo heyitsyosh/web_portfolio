@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { styles } from '../styles';
 import { moreSocials } from '../constants';
 
 const MoreSocials = () => {
+	const[copied, setCopied] = useState(false);
+
   return (
-	<div className={`${styles.paddingX} w-full flex flex-wrap justify-center text-lg gap-7 font-semibold text-logo-pink`}>
-		<ul className="list-none flex flex-wrap flex-row gap-7 justify-center">
+	<div className={`w-full flex justify-center flex-wrap text-lg gap-7 font-semibold text-logo-pink`}>
+		<ul className="list-none ml-11 flex flex-wrap flex-row gap-7">
 			{moreSocials.map((link) => (
 				<li key={link.id} className="inline hover:text-hover-pink justify-center">
 					<a
@@ -20,10 +22,14 @@ const MoreSocials = () => {
 		</ul>
 		<button 
 			type="button" 
-			className="flex items-center hover:text-hover-pink"
+			className="flex items-center justify-center hover:text-hover-pink float"
+			onClick={() => {setCopied(true);}}
 		>
 			npub
 			<p className="copy-button"/>
+			<p className={`${!copied ? 'opacity-0 h-0 overflow-hidden' : 'flex'} copied-message font-normal items-center`}>
+				copied!
+			</p>
 		</button>
 	</div>
   )
