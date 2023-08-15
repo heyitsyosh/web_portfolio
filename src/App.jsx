@@ -6,10 +6,11 @@ const App = () => {
 		<BrowserRouter>
 		  <div className="relative z-0 bg-primary">
 			<div className="bg-cover bg-no-repeat bg-center">
-				<Navbar />
+				{/* <Navbar /> */}
 				<div className="scroller-wrapper">
 					<div className="scroller">
 							<Hero />
+							<Socials />
 							{/* <About /> */}
 							<MoreSocials />
 							<Footer />

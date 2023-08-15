@@ -3,22 +3,22 @@ import { styles } from '../styles';
 import { moreSocials } from '../constants';
 
 const MoreSocials = () => {
-	const[copied, setCopied] = useState(false);
+	// const[copied, setCopied] = useState(false);
 
-	useEffect(() => {
-		if (copied) {
-			const timer=setTimeout(() => {
-				setCopied(false);
-			}, 1000);
-			return () => clearTimeout(timer);
-		}
-	}, [copied]);
+	// useEffect(() => {
+	// 	if (copied) {
+	// 		const timer=setTimeout(() => {
+	// 			setCopied(false);
+	// 		}, 1000);
+	// 		return () => clearTimeout(timer);
+	// 	}
+	// }, [copied]);
 
   return (
-	<div className={`w-full flex justify-center flex-wrap text-lg gap-7 font-semibold text-logo-pink`}>
-		<ul className="list-none ml-11 flex flex-wrap flex-row gap-7">
+	<div className={`w-full flex justify-center flex-wrap text-lg gap-7 font-semibold text-logo-pink mb-1 mt-5`}>
+		<ul className="list-none flex flex-wrap flex-row justify-evenly sm:justify-center sm:gap-7">
 			{moreSocials.map((link) => (
-				<li aria-label={link.id} key={link.id} className="hover:text-hover-pink justify-center">
+				<li aria-label={link.id} key={link.id} className="block px-1 sm:padding-0 hover:text-hover-pink">
 					<a
 						href={`${link.link}`}
 						target="_blank"
@@ -29,7 +29,7 @@ const MoreSocials = () => {
 				</li>
 			))}
 		</ul>
-		<button 
+		{/* <button 
 			type="button" 
 			aria-label={"npub"}
 			className="flex justify-center hover:text-hover-pink float"
@@ -43,7 +43,7 @@ const MoreSocials = () => {
 					copied!
 				</p>
 			</div>
-		</button>
+		</button> */}
 	</div>
   )
 } //translate 100%

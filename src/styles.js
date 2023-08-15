@@ -12,6 +12,10 @@ const styles = {
 		"text-title-pink font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]",
 	sectionSubText:
 		"sm:text-[18px] text-[14px] uppercase tracking-wider",
+
+	socialsSizing: 
+		"lg:width-[] lg:height-[] sm:width-[] sm:height-[] xs:width-[] xs:height-[] width: height:",
+	
 	};
 
 	export { styles };

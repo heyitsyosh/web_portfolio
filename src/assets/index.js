@@ -5,10 +5,9 @@ import close from "./close.png";
 import hovernav from "./nav_hover.json";
 import activenav from "./nav_active.json";
 
-import discord from "./contact/discord.png";
-import facebook from "./contact/facebook.png";
-import instagram from "./contact/instagram.png";
-import twitter from "./contact/twitter.png";
+import instagram from "./socials/instagram.png";
+import github from "./socials/github.png";
+import twitter from "./socials/twitter.png";
 
 export {
 	logo,
@@ -16,8 +15,7 @@ export {
 	close,
 	hovernav,
 	activenav,
-	discord,
-	facebook,
 	instagram,
+	github,
 	twitter,
 };

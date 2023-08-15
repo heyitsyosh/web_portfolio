@@ -1,29 +1,53 @@
-  export const navLinks = [
+import {
+	instagram, 
+	github,
+	twitter
+} from '../assets'
+
+export const navLinks = [
 	{
 		id: "home",
 		title: "Home",
-	  },
-	{
-	  id: "work",
-	  title: "Work",
 	},
-  ];
+	{
+		id: "work",
+		title: "Work",
+	},
+];
 
-  const moreSocials = [
+const socials = [
 	{
-	  id: "facebook",
-	  link: "https://www.facebook.com/my0shika",
+		id: "instagram",
+		icon: instagram,
+		link: "https://www.instagram.com/myoshika_/",
 	},
 	{
-	  id: "spotify",
-	  link: "https://tinyurl.com/39978tpb",
+		id: "github",
+		icon: github,
+		link: "https://github.com/heyitsyosh",
 	},
-	  {
+	{
+		id: "twitter",
+		icon: twitter,
+		link: "https://twitter.com/myoshika",
+	},
+];
+
+const moreSocials = [
+	{
+		id: "facebook",
+		link: "https://www.facebook.com/my0shika",
+	},
+	{
+		id: "spotify",
+		link: "https://tinyurl.com/39978tpb",
+	},
+	{
 		id: "discord",
 		link: "https://discordapp.com/users/myoshika",
-	  },
-  ];
-  
+	},
+];
+
 //   const services = [
 // 	{
 // 	  title: "Web Developer",
@@ -43,61 +67,6 @@
 // 	},
 //   ];
 
-//   const technologies = [
-// 	{
-// 	  name: "HTML 5",
-// 	  icon: html,
-// 	},
-// 	{
-// 	  name: "CSS 3",
-// 	  icon: css,
-// 	},
-// 	{
-// 	  name: "JavaScript",
-// 	  icon: javascript,
-// 	},
-// 	{
-// 	  name: "TypeScript",
-// 	  icon: typescript,
-// 	},
-// 	{
-// 	  name: "React JS",
-// 	  icon: reactjs,
-// 	},
-// 	{
-// 	  name: "Redux Toolkit",
-// 	  icon: redux,
-// 	},
-// 	{
-// 	  name: "Tailwind CSS",
-// 	  icon: tailwind,
-// 	},
-// 	{
-// 	  name: "Node JS",
-// 	  icon: nodejs,
-// 	},
-// 	{
-// 	  name: "MongoDB",
-// 	  icon: mongodb,
-// 	},
-// 	{
-// 	  name: "Three JS",
-// 	  icon: threejs,
-// 	},
-// 	{
-// 	  name: "git",
-// 	  icon: git,
-// 	},
-// 	{
-// 	  name: "figma",
-// 	  icon: figma,
-// 	},
-// 	{
-// 	  name: "docker",
-// 	  icon: docker,
-// 	},
-//   ];
-  
 //   const experiences = [
 // 	{
 // 	  title: "React.js Developer",
@@ -246,5 +215,5 @@
 // 	},
 //   ];
   
-export { moreSocials };
-//   export { services, technologies, experiences, testimonials, projects };
+export { socials, moreSocials };
+//   export { services, experiences, testimonials, projects };

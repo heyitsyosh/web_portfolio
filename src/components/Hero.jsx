@@ -4,7 +4,7 @@ import { AvatarCanvas } from './canvas';
 
 const Hero = () => {
   return (
-    <section className="relative w-full h-screen mx-auto">
+    <section className="relative w-full h-4/5 mx-auto">
 		<svg
 			className="absolute"
 			width="100%" 
