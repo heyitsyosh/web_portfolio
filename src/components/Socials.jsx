@@ -4,6 +4,10 @@ import { socials } from '../constants';
 
 const Socials = () => {
 	useEffect(() => {
+		if (window.innerWidth <= 768) {
+			return;
+		}
+
 		const icon = document.querySelectorAll('.icon');
 	
         const handleMouseMove = (e) => {
@@ -35,7 +39,7 @@ const Socials = () => {
 
   return (
     <div className={`${styles.paddingX} w-full h-1/5 flex justify-center`}>
-		<ul className="list-none flex flex-row max-h-75 sm:gap-7">
+		<ul className="list-none flex flex-row max-h-75 gap-3 sm:gap-7">
 			{socials.map((social) => (
 				<li aria-label={social.id} 
 					key={social.id} 

@@ -16,9 +16,9 @@ const MoreSocials = () => {
 
   return (
 	<div className={`w-full flex justify-center flex-wrap text-lg gap-7 font-semibold text-logo-pink mb-1 mt-5`}>
-		<ul className="list-none flex flex-wrap flex-row justify-evenly sm:justify-center sm:gap-7">
+		<ul className="list-none flex flex-wrap flex-row justify-evenly sm:justify-center gap-2 sm:gap-7">
 			{moreSocials.map((link) => (
-				<li aria-label={link.id} key={link.id} className="block px-1 sm:padding-0 hover:text-hover-pink">
+				<li aria-label={link.id} key={link.id} className="block px-1 hover:text-hover-pink">
 					<a
 						href={`${link.link}`}
 						target="_blank"

@@ -53,16 +53,15 @@
 /* NO SCROLLER */
 
 @media only screen and (max-width: 640px) {
-	.sroller-wrapper{
+	.scroller-wrapper{
 		width: 100%;
 		margin-right: 0px;
 	}
     .scroller::-webkit-scrollbar {
         width: 0px;
-		padding-right: 0px;
-        background: transparent;
     }
 	.scroller {
+		padding-right: 0px;
         scrollbar-width: none;
 		-ms-overflow-style: none;
     }
